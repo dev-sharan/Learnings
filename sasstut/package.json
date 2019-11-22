@@ -1,0 +1,19 @@
+{
+  "name": "sasstut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "concurrently --kill-others \"npm run compile:sass\" \"http-server -c-1 -f /index.html\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {}
+}
