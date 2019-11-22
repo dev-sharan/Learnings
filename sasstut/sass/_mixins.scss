@@ -1,0 +1,11 @@
+@mixin headercode($col, $tcol) {
+    width: 100% - 20%;
+    height: 50vh + 70vh - 20vh;
+    background-color: $col;
+    margin: 0 auto;
+    color: $tcol;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
